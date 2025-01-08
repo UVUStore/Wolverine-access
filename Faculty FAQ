@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+    font-family: "proxima nova";
+    src: url("https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/fonts/ProximaNova-Regular.otf");
+}
+@font-face {
+    font-family: "proxima nova blk";
+    src: url("https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/fonts/ProximaNova-Black.otf");
+}
+@font-face {
+    font-family: "stratum";
+    src: url("https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/fonts/Stratum1-Bold.otf");
+}
+
+
+.whole-page {
+  display:block;
+  margin: 0 auto;
+  max-width:1200px;
+}
+
+.topbanner {
+    background-color: #275d38;
+    height: 230px;
+    text-align: center;
+    padding: 65px 15px 0px 15px;
+    margin-bottom: 20px;
+    
+}
+.wabanner {
+  font-family: proxima nova blk;
+    color: #FFF;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 00;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    display: inline;
+    line-height: 75%;
+    letter-spacing: 1px;
+}
+.wasubhead {
+    color: #FFF;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: proxima nova;
+}
+ 
+  .wolverinebanner{
+    font-family:stratum;
+        font-size: 95px;
+        text-align:center;
+  }
+  
+    .waccessmenu {
+        background-color: #78be1f;
+        overflow: hidden;
+        float: none;
+        padding-bottom: 10px;
+
+    }
+    .waccessmenu a {
+        float: none;
+        color: #000000;
+        text-align: center;
+        padding: 10px 15px 0px 15px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .waccessmenu a:hover {
+        text-decoration: underline #000000 3px !important;
+        text-underline-offset: 5px;
+        color: #000000 !important;
+    }
+    .waccessmenu li{
+      display: inline-block;
+      margin-bottom:0px !important;
+
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center; 
+        align-items: stretch; 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: stretch;
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+  
+    .textbox{
+        padding: 75px 110px 75px 110px;
+    }
+    .underline_heading_white{
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight:400;
+        margin-bottom: 0px;
+        text-align:center;
+    }
+    .underline_heading_navy{
+        color: #0F2439;
+        font-size: 48px;
+        font-style: normal;
+        font-weight:400;
+        margin-bottom: 0px;
+        text-align:center;
+    }
+    .w_a_headding{
+        color: #275d38;
+        font-size: 48px;
+        font-style: normal;   
+        font-weight:400;
+        margin: 10px 0;
+
+    }
+    .white_text{
+        color: #FFF;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .blk_text{
+        color: #000000;
+        font-size: 14px;
+        line-height: 150%;
+    }
+  .whole-page li {
+         
+         list-style-type:disc !important;
+         font-size:15px;
+         line-height:150%;
+         margin: 0px 0px 20px;
+    }
+     
+    .image_block{
+        object-fit: cover !important;
+        object-position: 85%;
+        height: 100%;
+        width: 100%;
+    }
+    .collapse {
+      display: none;
+    }
+
+    .collapse.show {
+    display: block;
+    }
+    
+    
+    
+  
+   @media all and (max-width: 1200px) and (min-width: 851px) {
+        .textbox{
+        padding: 10px 100px 40px 100px;
+        }
+        .wabanner{
+        font-size: 92px;
+        }
+          .whole-page{
+        margin:0 5px;
+      }
+      .topbanner {
+      height:210px;
+      text-align:center;
+      padding: 40px 15px 0px 15px;
+  }
+  .wabanner{
+        font-size: 75px;
+        line-height: 85%;
+     
+        margin-left:12px;
+        padding: 0px 15px 5px 15px;
+  
+        }
+   .wolverinebanner{
+        font-size: 75px;
+    
+        margin-left:-12px;
+        margin-bottom:5px;
+ 
+        }
+         .wasubhead{
+        font-size: 30px;
+        line-height: 85%;
+        margin-top:10px;
+
+       }
+        .flex-container {
+          flex-direction: column !important;
+          width: 100% !important;
+        }
+        .wa-desktopbanner{
+        display:none !important;
+        }
+        .wa-mobilebanner{
+        display:block !important;
+        }
+  
+    }
+    @media all and (max-width: 850px) and (min-width: 0px) {
+        .whole-page {
+        margin: 0 5px;
+    }
+    .topbanner {
+        height: 210px;
+        text-align: center;
+          padding: 30px 15px 0px 15px;
+       
+    }
+    .wabanner {
+        font-size: 58px;
+        line-height: 85%;
+        display: block;
+        text-align: center;
+       
+        padding: 0px auto;
+    }
+    .wolverinebanner {
+        font-size: 48px;
+        display: block;
+        text-align: center;
+     
+        margin-bottom: 0px;
+    }
+    .wasubhead {
+        font-size: 20px;
+        line-height: 100%;
+        margin-top: 5px;
+         text-align: center;
+        
+    }
+        .flex-container {
+          flex-direction: column !important;
+          width: 100% !important;
+        }
+        .wa-desktopbanner{
+        display:none !important;
+        }
+        .wa-mobilebanner{
+        display:block !important;
+        }
+       
+        .textbox{
+          padding: 15px 30px 40px 30px;
+        }
+        ul class="blk_text white_text"{
+          padding-left:10px !important;
+        }
+        .underline_heading_white, .underline_heading_navy, .aggie_access_heading{
+          font-size:36px;
+        }
+        .waccessmenu{
+          display:block;
+          padding-bottom:8px;
+        }
+        .waccessmenu a {
+        padding: 10px 10px 0px 10px;
+        font-size: 14px;
+    }
+    }
+    /*dropdowns*/
+  
+ 
+.drop h2 {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 2px 0; /* Adjusted for shorthand padding */
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0 0 0;
+     transition: background-color 0.13s ease;
+}
+.facets-faceted-navigation-item-color-facet-group-expander-icon{
+  padding: 15px; 
+}
+.drop h2:hover{
+  background-color:#d6d6d6;
+}
+
+.ptag ul {
+  margin:0px !important;
+  list-style-type:disc !important;
+  font-size:15px;
+}
+
+.ptag ul {
+  margin-top:0px !important;
+}
+
+  .ptag {
+      padding: 0 25px;
+      margin:0 !important;
+    }
+ 
+    .ptag hr {
+      margin:15px 0;
+    }
+    
+    .inner-text {
+  margin: 0 20px;
+}
+
+
+    
+  </style>
+</head>
+<body>
+  <section class="wholepage">
+<div class="whole-page">
+<div class="waccessmenu">  
+<div class="topbanner">
+<h1 class="wabanner"><span class="wolverinebanner">Wolverine </span>ACCESS</h1>
+<h2 class="wasubhead">&nbsp; YOUR START-RIGHT TEXTBOOK PROGRAM</h2>
+  </div>
+  <ul style="text-align: center; margin:0;">
+    <li class="waccessmenu"><a href="wolverine-access">Home</a>
+        </li>
+    <li class="waccessmenu"><a href="wolverine-access-how-it-works">How It Works</a>
+    </li>
+    <li class="waccessmenu"><a href="wolverine-access-student-faq">Student FAQs</a>
+    </li>
+    <li class="waccessmenu" class="waccessmenu" style="text-decoration: underline #000000 3px !important;
+        text-underline-offset: 5px; color: #0F2439 !important;"><a href="wolverine-access-faculty-faq">Faculty FAQs</a>
+    </li>
+    <li class="waccessmenu"><a href="wolverine-access-important-dates">Important Dates</a>
+    </li>
+    <li class="waccessmenu"><a href="wolverine-access-help">Help</a></li></ul>
+  </div>
+  <br>
+  <h3 class="w_a_headding"><strong>Faculty & Administration FAQ</strong></h3>
+  
+ <h2>ADOPTING COURSE MATERIALS</h2>
+<div class="drop">
+  <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqH" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>What is the Wolverine Access program, and how does it benefit faculty?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqH">
+      <br>
+      <p>The Wolverine Access program is designed to ensure that all students have access to required course materials by the first day of classes for a flat fee. For faculty, this means every student is equally prepared, which can lead to a more uniform and effective teaching experience. It helps reduce the number of students falling behind due to lack of access to textbooks, potentially improving overall academic performance and retention rates.</p>
+   </div>
+   
+<div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq1" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+      
+    <h2>Will Wolverine Access affect textbook selection or academic freedom?</h2>
+    
+  <div class="faq-content">
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq1">
+      <br>
+        <p>No, faculty retain full academic freedom under this program and can continue selecting the materials that best suit their course. All textbooks remain available for adoption, whether they are publisher-paid content or free/open educational resources (OER).</p>
+
+          <p>Only required titles are included in the program; optional/recommended, out-of-print, and hard-to-find titles are not included in the program.</p>
+  </div>
+       
+  <div class="faq-content">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq2" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>Do I need to use Canvas for instruction?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq2">
+      <br>
+      <p>No, Canvas is not required for instruction. However, students need to sign in to the main Canvas page to access the Textbooks & Course Materials app, where their digital materials will be available.</p>
+   </div>
+    
+    
+
+  <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq3" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>How do I adopt materials?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq3">
+      <br>
+          <p>Please submit your book requests to your department administrative assistant. Faculty are still required to submit their textbook adoptions by the established deadlines. The program simplifies the process by ensuring that once materials are adopted, they are automatically made available to students enrolled in your course. Faculty members should ensure they submit accurate and complete information to avoid any delays in material availability.</p>
+ </div>
+   
+    
+<div class="faq-header">
+  <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq4" data-type="collapse">
+    <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+  <h2>What are the course material adoption requests and deadlines?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq4">
+      <br>
+      <p>The Higher Education Opportunity Act requires that all course materials and their associated costs be disclosed to the student at the time they register for courses. All course material* adoptions should be submitted according to the following due dates:</p>
+        <p>Spring: October 1 <br>Summer: February 1 <br>Fall: March 1</p>
+        <p>*Course Materials are defined as textbooks required or recommended by instructors in conjunction with higher education courses. Supplemental materials not covered in course fees, such as electronic materials (calculator, website access, etc.), art supplies, travel costs, additional printed materials, etc. Open Education Resources (OER), which are free learning materials that reside in the public domain and have been released under a Creative Commons license.</p>
+</div>
+
+<div class="faq-header">
+  <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq5" data-type="collapse">
+    <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+  <h2>Can you order a desk/examination copy for me?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq5">
+      <br>
+      <p>Unfortunately, the UVU Store is unable to order desk/examination copies because publishers require these requests to come directly from the academic department. However, we are more than happy to provide publisher contact information. You can contact us at <a href="mailto:textbookadoptions@uvu.edu" style="color: #0e8345;">TextbookAdoptions@uvu.edu</a> or <a href="tel:8018636233" style="color: #0e8345;">801-863-8641</a> for assistance.</p>
+</div>
+
+<div class="faq-header">
+  <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq6" data-type="collapse">
+    <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+  <h2>What about course packets and readers?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq6">
+      <br>
+      <p>If you have a custom course packet or reader that you would like to use for your course, we can help! We'll work one-on-one with you to get your packet just how you want it, even chasing down copyright clearances for you. Once the content is all assembled, the packets are printed on campus and made available for students to purchase at the UVU Store. To begin assembling your course packet or for questions, contact us at <a href="mailto:textbookadoptions@uvu.edu" style="color: #0e8345;">TextbookAdoptions@uvu.edu</a> or <a href="tel:8018636233" style="color: #0e8345;">801-863-8641</a>.</p>
+</div>
+
+<div class="faq-header">
+  <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq7" data-type="collapse">
+    <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+  <h2>Where can I find help?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq7">
+      <br>
+      <p>We know selecting course materials far in advance can be a daunting task. We're here to help! We can assist by putting you in contact with the publisher's representatives or providing you with additional resources to help narrow down your choices.
+      <br>
+      <br>Feel free to contact any of our knowledgeable staff. Ordering/Faculty services: <a href="mailto:textbookadoptions@uvu.edu" style="color: #0e8345;">TextbookAdoptions@uvu.edu</a> or <a href="tel:8018636233" style="color: #0e8345;">801-863-8641</a>. </p>
+</div>
+
+<div>
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq8" data-type="collapse"><div class="faq-header">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>How do I obtain a desk/examination copy of a textbook?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq8">
+      <br>
+        <p>There is no change to this process; you will reach out to your publisher representative to request a desk copy. If your course has a required eBook through Wolverine Access, all Canvas course users with the role of teacher, course admin, or TA will receive complimentary access to eBooks provided by VitalSource to the Textbooks & Course Materials tab in Canvas. For eBooks or courseware, provided directly through a publisher's content platform (such as Pearson MyLab or McGraw-Hill Connect), please contact your publisher representative.</p>
+  </div>
+</div>
+
+
+<div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq9" data-type="collapse"><div class="faq-header">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>Will my students still get charged if I cancel a book from my course?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faq9">
+      <br>
+        <p>Wolverine Access is a flat-rate program that covers all required textbooks for eligible students. Therefore, if you decide to cancel a book from your class, there is no additional cost nor reduction to students. </p>
+        
+  </div>
+       
+  <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqA" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>Digital course materials are not suitable for my course. Will exceptions be made to accommodate print? </h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqA">
+      <br>
+      <p>It is understood that a one-size-fits-most model may not meet the needs of every course format, curriculum, or mode of instruction. In instances with pedagogical mismatch where the required course materials are impractical, unfeasible or unavailable in digital format, print options may be considered on an individual title-by-title basis. Please contact us at <a href="mailto:textbookadoptions@uvu.edu" style="color: #0e8345;">TextbookAdoptions@uvu.edu</a> if you would like to review your required course materials. </p>
+   </div>
+    
+    
+  <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqB" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>I use materials other than a publisher textbook, such as third-party software, library resources, OER, etc. Can I continue to do so? </h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqB">
+      <br>
+      <p>Yes, you may continue to request the same content as before. Many third-party software providers have already integrated or can be integrated into the Wolverine Access program. In collaboration with the Office of Teaching and Learning (OTL), their content, as well as OER content will be listed alongside any publisher content in students' textbooks and course materials. </p>
+
+ </div>
+  <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqx" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>Does Wolverine Access use one or more content providers?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqx">
+      <br>
+      <p>Wolverine Access provides publisher materials via Canvas, through a single seamless content provider, for digital content that is contracted with the UVU Store. The content provider supplies proof to UVU of their federal compliance with assessment and certifications for websites, apps, and software.</p>
+   </div>
+   
+     <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqc" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>What happens if I want to require an older or outdated edition of the textbook?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqc">
+      <br>
+      <p>The publisher may no longer provide digital access to older editions. You may need to reach out to the publisher to request that the older version be made available to your students. If this is possible, you are required to reach out to the UVU Store at <a href="mailto:textbookadoptions@uvu.edu" style="color: #0e8345;">TextbookAdoptions@uvu.edu</a> to make sure it’s included in Wolverine Access.</p>
+   </div>
+   
+      <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqd" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>What happens if I list textbooks and course materials late and they are not visible in Wolverine Access?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqd">
+      <br>
+      <p>Discuss the timing of the textbook adoptions with your admin and email <a href="mailto:textbookadoptions@uvu.edu" style="color: #0e8345;">TextbookAdoptions@uvu.edu</a>.</p>
+      <p>If you have a textbook listed on your syllabus that is not visible to students in their Wolverine Access booklist, please contact the UVU Store. Timely and accurate textbook adoptions or book requests are the instructor’s responsibility. The UVU Store cannot guarantee that late textbook adoptions or book requests will be available through Wolverine Access.</p>
+   </div>
+   
+ </div>
+</div>
+</div>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>FOR MY STUDENTS</h2> <!-- next section -->
+
+<div class="drop">
+  <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqC" data-type="collapse">
+    <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+  <h2>How do students access their course materials?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqC">
+      <br>
+      <p>Students initially access eBooks directly through Textbooks & Course Materials in Canvas. After initial access, a student may continue to access through your Canvas course or by logging in directly to their <a href="https://www.vitalsource.com/" target="_blank" style="color: #0e8345;">VitalSource</a> account. eBooks provided by VitalSource can be downloaded to any device and across devices for offline use. At the conclusion of a term, eBooks may be accessed through VitalSource until the eBook’s duration expires. 
+<br><br>
+Publisher courseware (such as McGraw-Hill Connect or Pearson MyLab) is accessed through an integration in Canvas or with a provided URL. Most publisher courseware is integrated with Canvas to connect to the publisher’s content platform and students will use the Canvas link to create their initial courseware login. After an initial login has been created, students may go directly to or bookmark the login page of the publisher’s content platform. 
+<br><br>
+For non-digital course materials (only those titles offered as print), copies will be distributed to students by the UVU Store.</p>
+</div>
+
+<div class="drop">
+  <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqD" data-type="collapse">
+    <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+  <h2>How long do students have access to digital materials such as eBooks and courseware?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqD">
+      <br>
+      <p>Access duration depends on the publisher, with most eBooks being lifetime access and others being five years. All eBooks have a minimum access duration of 150 days. 
+<br><br>
+Courseware is typically only accessible for one semester unless otherwise negotiated with a publisher for a multi-semester course series.</p>
+</div>
+
+<div class="drop">
+  <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqw" data-type="collapse">
+    <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+  <h2>How does Wolverine Access handle the digital divide between students?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqw">
+      <br>
+      <p>Wolverine Access reduces the digital divide in several ways: </p>
+      <p>Most courses require students to access course information on Canvas. By integrating a student’s textbooks and course materials within Canvas, we are reducing the amount of digital software requirements that could burden students. </p>
+    <p>Wolverine Access also integrates with all laptops, tablets, and phones. This allows the students to access their materials from any device they choose. This means they can access materials from their personal devices or any devices provided by computer labs at Utah Valley University. </p>
+    <p>Wolverine Access helps those students who live in remote areas, who may struggle to come to campus to get materials, and who struggle with added shipping costs.</p>
+    </div>
+
+<div class="drop">
+  <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqF" data-type="collapse">
+    <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+  <h2>Can students download eBooks or use them without internet access?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqF">
+      <br>
+      <p>The VitalSource eReader is fully device-agnostic and scalable and allows simultaneous usage across two mobile devices and two desktop devices. Further, content downloaded to the eReader app can be accessed offline if it was downloaded before the loss of internet connection. As for saving as a file, copyright laws can restrict licensed content from taking the form of re-distributable files. Allowing content to only be downloaded within the eReader puts the onus on the provider to protect copyright and relieves the University of associated risks.</p>
+</div>
+
+<div class="drop">
+  <div class="faq-content">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqG" data-type="collapse"><div class="faq-header">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>Can my students decline access or opt out? How do they do so, and how do they acquire their textbooks if they choose to opt out?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqG">
+      <br>
+        <p>Yes, students can choose between different plan options. Learn more on the <a href="https://store.uvu.edu/wolverine-access-student-faq" style="color: #0e8345;">Student FAQs page</a>. </p>
+        
+  </div>
+       
+       
+          <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqb" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>Are course packets included in the Wolverine Access $250 fee?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqb">
+      <br>
+     <p>Yes, when you opt in to Wolverine Access, your first 'Course Packet' in each course is included in the $250 fee. Any additional Course Packets beyond the initial set must be purchased separately at the UVU Store for the regular retail price.</p>
+   </div>
+  
+       <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqa" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>When can students start opting out of Wolverine Access?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqa">
+      <br>
+     <p>Students will have the option to opt out of Wolverine Access in Canvas beginning on the first day of classes.</p>
+   </div>
+    
+  <!--<div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqI" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>How does the program impact my textbook adoption process?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqI">
+      <br>
+      <p>Faculty are still required to submit their textbook adoptions by the established deadlines. The program simplifies the process by ensuring that once materials are adopted, they are automatically made available to students enrolled in your course. Faculty members should ensure they submit accurate and complete information to avoid any delays in material availability.</p>-->
+
+ </div>
+<div class="faq-content">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqJ" data-type="collapse"><div class="faq-header">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>Can I choose any textbook or material for my course? </h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqJ">
+      <br>
+        <p>Yes, faculty have the freedom to choose the textbooks and materials they feel are most appropriate for their courses. However, it's important to be aware that some materials may not be available in digital format or may require additional negotiation with publishers to be included in the Wolverine Access program. Working closely with the UVU Store can help address these issues.</p>
+        
+  </div>
+       
+  <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqK" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>What if my course requires specialized materials that aren’t covered by the program?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqK">
+      <br>
+      <p>If your course requires specialized materials that aren’t covered by the Wolverine Access program (e.g., lab kits, art supplies, goggles, latex gloves, lab coats, etc.), you should inform students ahead of time. These materials will need to be purchased separately, and clear communication about these requirements is crucial to avoid confusion.</p>
+   </div>
+    
+    
+  <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqL" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>How will I be informed about the status of my course materials in the program?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqL">
+      <br>
+      <p>Faculty can check the status of their adopted materials through the campus portal or by contacting the UVU Store directly. Notifications are often sent to faculty when materials have been successfully integrated into Canvas or if there are any issues that need to be addressed.</p>
+
+      </div>
+      
+        <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqM" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>What should I do if I need to change my course materials after they’ve been adopted?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqM">
+      <br>
+      <p>If changes to course materials are necessary after the adoption deadline, faculty should contact the UVU Store as soon as possible. While late changes can be accommodated, they may result in delays in making the new materials available to students. It’s best to finalize adoptions before the deadline to ensure all materials are ready by the start of the semester.</p>
+
+      </div>
+        <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqN" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>How does the opt out process affect my course?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqN">
+      <br>
+      <p>Students can opt out of the Wolverine Access program by the crouse drop deadline. If they do, they are responsible for obtaining the required materials on their own. You should be aware that some students in their classes might not participate in the program, which could lead to disparities in access to materials.</p>
+
+      </div>
+        <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqP" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>Can I opt out of Wolverine Access for my course?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqP">
+      <br>
+      <p>Faculty cannot opt out of the Wolverine Access program on behalf of their students. However, you can decide whether your courses are included in the program by choosing the materials you adopt. If the selected materials are part of the program, all students enrolled in the course will be automatically included unless they individually opt out.</p>
+
+      </div>
+        <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqQ" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>How are digital materials integrated into Canvas?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqQ">
+      <br>
+      <p>Once a course's materials are adopted and confirmed, they are automatically integrated into the Canvas platform. Students can access these materials directly through their course modules. You can also embed these materials into specific lessons or assignments as needed, offering flexibility in how the content is delivered.</p>
+
+      </div>
+        <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqR" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>What should I do if students report issues accessing their materials?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqR">
+      <br>
+      <p>If students encounter issues accessing their digital materials, please direct them to contact the IT help desk or the UVU Store for support. It’s helpful to provide these contacts at the beginning of the course to ensure students know where to go for assistance.</p>
+
+      </div>
+      
+         <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqS" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>How does Wolverine Access support academic success?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqS">
+      <br>
+      <p>Wolverine Access ensures all students have the necessary materials on day one, which can lead to a more engaged and prepared classroom environment. You may notice improved participation and performance as students are more likely to complete readings and assignments when they have immediate access to the required materials.</p>
+      </div>
+        <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqT" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>Are there any costs associated with the program for faculty?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqT">
+      <br>
+      <p>There are no direct costs for faculty to participate in the Wolverine Access program. The program fee is charged to students, covering the cost of their materials. You can benefit from the streamlined process without additional financial burden.</p>
+
+      </div>
+        <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqU" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>How does Wolverine Access impact the overall learning environment?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqU">
+      <br>
+      <p>The program helps create a more equitable learning environment by ensuring all students, regardless of their financial situation, have access to the same high-quality materials. This uniformity can lead to more consistent engagement and performance across the student body, making teaching more effective and rewarding.</p>
+
+      </div>
+      
+         <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqV" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>What role does faculty feedback play in the program?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqV">
+      <br>
+      <p>Faculty feedback is crucial in refining and improving the Wolverine Access program. Input regarding the availability, quality, and integration of materials helps the UVU Store and administration address any issues and adapt the program to better meet the needs of both students and instructors.
+      </p>
+
+      </div>
+      
+      
+               <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqy" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+    <h2>Where do Auxiliary Services receive their funding? </h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqy">
+      <br>
+      <p>Auxiliary enterprises operate as essential elements in support of the mission of the university. Auxiliary Services typically generate their own revenue and do not rely on direct state funding. These services are designed to be self-supporting, and they often receive funding through margins charged to students, staff, faculty, and other consumers. Auxiliary enterprises are expected to pay their appropriate share of costs for physical plant operations and other directly chargeable support costs related to their operation. In addition, auxiliary enterprises shall pay an appropriate share of the university's other administrative support costs. </p>
+
+      </div>
+      
+      <div class="faq-header">
+    <a href="#" class="collapsed" data-toggle="collapse" data-target="#faqY" data-type="collapse">
+      <i class="facets-faceted-navigation-item-color-facet-group-expander-icon"></i>
+   <h2>Why do affordable access programs automatically bill students unless they opt out?</h2>
+    </a>
+    </div>
+    <div class="collapse inner-text" id="faqY">
+      <br>
+     <p>The opt-out structure ensures that campuses have the economies of scale necessary to secure bulk discounts from publishers and other suppliers, it also guarantees that students have their required materials automatically on or before the first day of classes. Students have two to three weeks before the opt-out deadline to comparison shop and make sure they are getting their materials for the lowest price.</p>
+ 
+    <p>When negotiating with publishers, institutions can achieve significant savings in an opt-out program and better terms, as it is operationally more efficient than an opt-in program, and that savings can be realized by institutions and students. On average, opt-out access programs save students an average of 59.4 percent compared to new print list prices (PLP) and 30.8 percent from digital list prices (DLP).  </p>
+   </div>
+      
+      </section>
+
+       <script>
+
+
+
+      </script>
+      
+     
+</body>
+</html>
