@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  
+  @font-face {
+    font-family: "proxima nova";
+    src: url("https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/fonts/ProximaNova-Regular.otf");
+}
+@font-face {
+    font-family: "proxima nova blk";
+    src: url("https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/fonts/ProximaNova-Black.otf");
+}
+@font-face {
+    font-family: "stratum";
+    src: url("https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/fonts/Stratum1-Bold.otf");
+}
+
+
+.whole-page {
+  display:block;
+  margin: 0 auto;
+  max-width:1200px;
+}
+
+.topbanner {
+    background-color: #275d38;
+    height: 230px;
+    text-align: center;
+    padding: 65px 15px 0px 15px;
+    margin-bottom: 20px;
+    
+}
+.wabanner {
+  font-family: proxima nova blk;
+    color: #FFF;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 00;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    display: inline;
+    line-height: 75%;
+    letter-spacing: 1px;
+}
+.wasubhead {
+    color: #FFF;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: proxima nova;
+}
+ 
+  .wolverinebanner{
+    font-family:stratum;
+        font-size: 95px;
+        
+        text-align:center;
+  }
+  
+    .waccessmenu {
+        background-color: #78be1f;
+        overflow: hidden;
+        float: none;
+        padding-bottom: 10px;
+
+    }
+    .waccessmenu a {
+        float: none;
+        color: #000000;
+        text-align: center;
+        padding: 10px 15px 0px 15px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .waccessmenu a:hover {
+        text-decoration: underline #000000 3px !important;
+        text-underline-offset: 5px;
+        color: #000000 !important;
+    }
+    .waccessmenu li{
+      display: inline-block;
+      margin-bottom:0px !important;
+
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center; 
+        align-items: stretch; 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: stretch;
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+  
+    .textbox{
+        padding: 75px 110px 75px 110px;
+    }
+    .underline_heading_white{
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight:400;
+        margin-bottom: 0px;
+        text-align:center;
+    }
+    .underline_heading_navy{
+        color: #0F2439;
+        font-size: 48px;
+        font-style: normal;
+        font-weight:400;
+        margin-bottom: 0px;
+        text-align:center;
+    }
+    .w_a_headding{
+        color: #275d38;
+        font-size: 48px;
+        font-style: normal;   
+        font-weight:400;
+        margin: 10px 0;
+
+    }
+    .white_text{
+        color: #FFF;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .blk_text{
+        color: #000000;
+        font-size: 14px;
+        line-height: 150%;
+    }
+  .whole-page li {
+         
+         list-style-type:disc !important;
+         font-size:15px;
+         line-height:150%;
+         margin: 0px 0px 20px;
+    }
+     
+    .image_block{
+        object-fit: cover !important;
+        object-position: 85%;
+        height: 100%;
+        width: 100%;
+      
+    }
+    
+    .aggieaccessthin{
+      font-weight:300;
+      font-size: 18px;
+      text-transform:none;
+      letter-spacing: normal;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      color: #000;
+    }
+    .date{
+      white-space: nowrap;
+      font-weight:bold;
+    }
+
+   @media all and (max-width: 1200px) and (min-width: 851px) {
+        .textbox{
+        padding: 10px 100px 40px 100px;
+        }
+        .wabanner{
+        font-size: 92px;
+        }
+          .whole-page{
+        margin:0 5px;
+      }
+      .topbanner {
+      height:210px;
+      text-align:center;
+      padding: 40px 15px 0px 15px;
+  }
+  .wabanner{
+        font-size: 75px;
+        line-height: 85%;
+     
+        padding: 0px 15px 5px 15px;
+  
+        }
+   .wolverinebanner{
+        font-size: 75px;
+        margin-bottom:5px;
+ 
+        }
+         .wasubhead{
+        font-size: 30px;
+        line-height: 85%;
+        margin-top:10px;
+
+       }
+        .flex-container {
+          flex-direction: column !important;
+          width: 100% !important;
+        }
+        .wa-desktopbanner{
+        display:none !important;
+        }
+        .wa-mobilebanner{
+        display:block !important;
+        }
+  
+    }
+    @media all and (max-width: 850px) and (min-width: 0px) {
+        .whole-page {
+        margin: 0 5px;
+    }
+    .topbanner {
+        height: 210px;
+        text-align: center;
+          padding: 30px 15px 0px 15px;
+       
+    }
+    .wabanner {
+        font-size: 58px;
+        line-height: 85%;
+        display: block;
+        text-align: center;
+       
+        padding: 0px auto;
+    }
+    .wolverinebanner {
+        font-size: 48px;
+        display: block;
+        text-align: center;
+       
+        margin-bottom: 0px;
+    }
+    .wasubhead {
+        font-size: 20px;
+        line-height: 100%;
+        margin-top: 5px;
+         text-align: center;
+        
+    }
+        .flex-container {
+          flex-direction: column !important;
+          width: 100% !important;
+        }
+        .wa-desktopbanner{
+        display:none !important;
+        }
+        .wa-mobilebanner{
+        display:block !important;
+        }
+       
+        ul class="blk_text white_text"{
+          padding-left:10px !important;
+        }
+        .underline_heading_white, .underline_heading_navy, .aggie_access_heading{
+          font-size:36px;
+        }
+        .waccessmenu{
+          display:block;
+          padding-bottom:8px;
+        }
+        .waccessmenu a {
+        padding: 10px 10px 0px 10px;
+        font-size: 14px;
+    }
+    }
+ .responsive-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Small screens (up to 600px) */
+  @media only screen and (max-width: 600px) {
+    .responsive-image {
+      content: url('https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/UVU_AssetImages/WA Mobile Spring Important Dates.png');
+    }
+  }
+
+  /* Medium screens (601px to 1024px) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .responsive-image {
+      content: url('https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/UVU_AssetImages/WA Spring Important Dates.png');
+    }
+  }
+
+  /* Large screens (1025px and up) */
+  @media only screen and (min-width: 1025px) {
+    .responsive-image {
+      content: url('https://store.uvu.edu/SSP Applications/NetSuite Inc. - SCS/SuiteCommerce Standard/UVU_AssetImages/WA Spring Important Dates.png');
+    }
+  }
+
+    
+  </style>
+</head>
+<body>
+<div class="whole-page">
+<div class="waccessmenu">  
+<div class="topbanner">
+<h1 class="wabanner"><span class="wolverinebanner">Wolverine </span>ACCESS</h1>
+<h2 class="wasubhead">&nbsp; YOUR START-RIGHT TEXTBOOK PROGRAM</h2>
+  </div>
+  <ul style="text-align: center; margin:0;">
+    <li class="waccessmenu"><a href="wolverine-access">Home</a>
+        </li>
+    <li class="waccessmenu"><a href="wolverine-access-how-it-works">How It Works</a>
+    </li>
+    <li class="waccessmenu"><a href="wolverine-access-student-faq">Student FAQs</a>
+    </li>
+    <li class="waccessmenu"><a href="wolverine-access-faculty-faq">Faculty FAQs</a>
+    </li>
+    <li class="waccessmenu" style="text-decoration: underline #000000 3px !important;
+        text-underline-offset: 5px; color: #0F2439 !important;"><a href="wolverine-access-important-dates">Important Dates</a>
+    </li>
+    <li class="waccessmenu"><a href="wolverine-access-help">Help</a></li></ul>
+  </div>
+  <br>
+  <h3 class="w_a_headding"><strong>Important Dates</strong></h3>
+  
+  <h2>2025 Spring Semester</h2>
+ 
+  <hr>
+  <table style="margin-bottom:40px">
+    <tbody>
+      <tr>
+        <td class="aggieaccessthin date">Oct. 29</td>
+        <td class="aggieaccessthin">Students who have completed course registration will see Wolverine Access charges start appearing on their student tuition and fee bill.
+        </tr>
+        <tr>
+          <td class="aggieaccessthin date">Jan. 2</td>
+          <td class="aggieaccessthin">Digital materials will begin to be available in Canvas Textbooks & Course Materials. Students may change their plan or opt out without penalty.</td>
+          </tr>
+          <tr>
+            <td class="aggieaccessthin date">Jan. 6</td>
+            <td class="aggieaccessthin">First day of spring semester classes.</td>
+            </tr>
+            <tr>
+              <td class="aggieaccessthin date">Jan. 6</td>
+              <td class="aggieaccessthin">Print books are available for pickup at the UVU Store. This option is only available for specific course materials requested by professors on a case-by-case basis.</td>
+              </tr>
+              <tr>
+                <td class="aggieaccessthin date">Jan. 27</td>
+                <td class="aggieaccessthin">Wolverine Access opt-out deadline and last day to drop classes.</td>
+                </tr>
+                <tr>
+                  <td class="aggieaccessthin date">Feb. 3</td>
+                  <td class="aggieaccessthin">Last day to return printed books to the UVU Store for students who opt out or drop a class.</td>
+                  </tr>
+                      </tbody>
+                      </table>
+                      
+    <h2>Important Dates Schedule</h2>
+                      
+            <img src="default-image.jpg" alt="Responsive" class="responsive-image">
+
+      
+   
+  
+  </div>
+  </body>
